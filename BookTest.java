@@ -38,6 +38,7 @@ public class BookTest
     /**
      * Sets up the test fixture.
      *
+     * Testing the Classroom
      * Called before every test case method.
      */
     @Before

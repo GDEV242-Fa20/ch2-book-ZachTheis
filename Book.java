@@ -53,6 +53,7 @@ class Book
     /**
      * Provides access to the integer value stored in pages
      * This satisfies 2.85
+     * @return pages
      */
     public int getPages()
     {
@@ -62,6 +63,7 @@ class Book
     /**
      * Provides access to the book's Reference Number.
      * This satisfies part of 2.88
+     * @return refNumber
      */
     public String getRefNumber()
     {
@@ -71,6 +73,7 @@ class Book
     /**
      * Provides access to the number of times the book has been borrowed.
      * This satisfies 2.91
+     * @return borrowed
      */
     public int getBorrowed()
     {
@@ -80,6 +83,7 @@ class Book
     /**
      * Identifies if the book is a course textbook
      * This satisfies 2.92
+     * @return courseText
      */
     public boolean isCourseText()
     {

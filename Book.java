@@ -67,11 +67,19 @@ class Book
     
     /**
      * Stores the book's reference number
-     * This satisfies part of 2.88
+     * This satisfies 2.88 and 2.90
      */
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
+        if(ref.length() >= 3)
+        {
+            refNumber = ref;
+        }
+        else
+        {
+            System.out.println("Reference number not set.");
+            System.out.println("Reference numbers must be at least 3 digits in length.");
+        }
     }
     
     /**

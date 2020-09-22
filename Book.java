@@ -20,7 +20,7 @@ class Book
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean courseText)
     {
         author = bookAuthor;
         title = bookTitle;
@@ -80,7 +80,7 @@ class Book
      * Identifies if the book is a course textbook
      * This satisfies 2.92
      */
-    public boolean isCourseText();
+    public boolean isCourseText()
     {
         return courseText;
     }

@@ -13,6 +13,8 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
+    private boolean courseText;
 
     /**
      * Set the author and title fields when this object
@@ -66,6 +68,24 @@ class Book
     }
     
     /**
+     * Provides access to the number of times the book has been borrowed.
+     * This satisfies 2.91
+     */
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
+    /**
+     * Identifies if the book is a course textbook
+     * This satisfies 2.92
+     */
+    public boolean isCourseText();
+    {
+        return courseText;
+    }
+    
+    /**
      * Stores the book's reference number
      * This satisfies 2.88 and 2.90
      */
@@ -80,6 +100,15 @@ class Book
             System.out.println("Reference number not set.");
             System.out.println("Reference numbers must be at least 3 digits in length.");
         }
+    }
+    
+    /**
+     * Increases the number of times the book has been borrowed by 1
+     * This satisfies 2.91
+     */
+    public void borrow()
+    {
+        borrowed += 1;
     }
     
     /**
@@ -102,7 +131,7 @@ class Book
     
     /**
      * Tells the user the author, title, page count, and reference number of the book.
-     * This satisfies 2.87 and 2.89
+     * This satisfies 2.87, 2.89, and 2.91
      */
     public void printDetails()
     {
@@ -117,6 +146,7 @@ class Book
         {
             System.out.println("Reference #: zzz");
         }
+        System.out.println("This book has been borrowed " + borrowed + " times");
     }
     
     

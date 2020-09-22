@@ -55,7 +55,7 @@ class Book
     }
     
     /**
-     * Tells the use the name of the book's author
+     * Tells the user the name of the book's author
      * This satisfies part of 2.84
      */
     public void printAuthor()
@@ -64,12 +64,23 @@ class Book
     }
  
     /**
-     * Tells the use the name of the book's title
+     * Tells the user ther name of the book's title
      * This satisfies part of 2.84
      */    
     public void printTitle()
     {
         System.out.println("The title of this book is " + title);
+    }
+    
+    /**
+     * Tells the user the author, title, and page count of the book.
+     * This satisfies 2.87
+     */
+    public void printDetails()
+    {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Pages: " + pages);
     }
     
     
